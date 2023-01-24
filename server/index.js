@@ -2,9 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
-import materialRoutes from './routes/materials';
+import materialsRoutes from './routes/materials.js';
 
-app.use('/material', materialRoutes)
+app.use('/materials', materialsRoutes)
 
 const app = express();
 

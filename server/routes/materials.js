@@ -1,9 +1,11 @@
 import express from 'express';
+import {getMaterials, createMaterials} from '../controllers/materials.controller';
 
 const router = express.Router();
 
-router.get('/', (req,res) => {
-    res.send('This works!')
-});
+router.get('/', getMaterials); 
+ {
+    router.post('/', createMaterials);
+};
 
 export default router;
